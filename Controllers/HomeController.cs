@@ -17,7 +17,7 @@ namespace ASPDOTNET6Live.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            var myThaiDate = _thaiDate.ShowThaiDate;
+            var myThaiDate = _thaiDate.ShowThaiDate();
             return Ok(new { message = $"Hello My API {myThaiDate}" });
         }
     }
